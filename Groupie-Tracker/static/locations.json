@@ -1,0 +1,774 @@
+{
+    "aalborg-denmark": [
+      9.921747,
+      57.04882
+    ],
+    "aarhus-denmark": [
+      10.203921,
+      56.162939
+    ],
+    "aberdeen-uk": [
+      -2.094278,
+      57.149717
+    ],
+    "abu_dhabi-united_arab_emirates": [
+      54.366667,
+      24.466667
+    ],
+    "alabama-usa": [
+      -86.902298,
+      32.318231
+    ],
+    "amityville-usa": [
+      -73.417067,
+      40.678989
+    ],
+    "amsterdam-netherlands": [
+      4.895168,
+      52.370216
+    ],
+    "anaheim-usa": [
+      -117.914504,
+      33.835293
+    ],
+    "antwerp-belgium": [
+      4.402464,
+      51.219448
+    ],
+    "arizona-usa": [
+      -111.093731,
+      34.048928
+    ],
+    "arras-france": [
+      2.777535,
+      50.291002
+    ],
+    "athens-greece": [
+      23.72936,
+      37.983917
+    ],
+    "atlanta-usa": [
+      -84.387982,
+      33.748995
+    ],
+    "auckland-new_zealand": [
+      174.763331,
+      -36.84846
+    ],
+    "bangkok-thailand": [
+      100.501765,
+      13.756331
+    ],
+    "barcelona-spain": [
+      2.173404,
+      41.385064
+    ],
+    "belo_horizonte-brazil": [
+      -43.934493,
+      -19.916681
+    ],
+    "berlin-germany": [
+      13.404954,
+      52.520007
+    ],
+    "berwyn-usa": [
+      -87.793668,
+      41.850587
+    ],
+    "bilbao-spain": [
+      -2.934985,
+      43.263013
+    ],
+    "birmingham-uk": [
+      -86.80249,
+      33.520661
+    ],
+    "bogota-colombia": [
+      -74.075833,
+      4.598056
+    ],
+    "boston-usa": [
+      -71.05888,
+      42.360082
+    ],
+    "boulogne_billancourt-france": [
+      48.8333,
+      2.25
+    ],
+    "brasilia-brazil": [
+      -47.92182,
+      -15.826691
+    ],
+    "bratislava-slovakia": [
+      17.107137,
+      48.145892
+    ],
+    "brisbane-australia": [
+      153.023449,
+      -27.471011
+    ],
+    "brixton-uk": [
+      -117.307294,
+      33.211168
+    ],
+    "brooklyn-usa": [
+      -73.944158,
+      40.678178
+    ],
+    "budapest-hungary": [
+      19.040235,
+      47.497912
+    ],
+    "buenos_aires-argentina": [
+      -58.381593,
+      -34.603723
+    ],
+    "burriana-spain": [
+      -0.08483,
+      39.889592
+    ],
+    "burswood-australia": [
+      115.857047,
+      -31.953513
+    ],
+    "california-usa": [
+      -119.417932,
+      36.778261
+    ],
+    "canton-usa": [
+      113.264385,
+      23.12911
+    ],
+    "cardiff-uk": [
+      -3.17909,
+      51.481581
+    ],
+    "changzhou-china": [
+      119.974062,
+      31.811226
+    ],
+    "charlotte-usa": [
+      -80.843127,
+      35.227087
+    ],
+    "chicago-usa": [
+      -87.629798,
+      41.878114
+    ],
+    "cincinnati-usa": [
+      -84.51202,
+      39.103118
+    ],
+    "cleveland-usa": [
+      -81.694361,
+      41.49932
+    ],
+    "colorado-usa": [
+      -105.782067,
+      39.550051
+    ],
+    "columbia-usa": [
+      -74.297333,
+      4.570868
+    ],
+    "copenhagen-denmark": [
+      12.568337,
+      55.676097
+    ],
+    "cuxhaven-germany": [
+      8.687906,
+      53.859336
+    ],
+    "dallas-usa": [
+      -96.796988,
+      32.776664
+    ],
+    "del_mar-usa": [
+      -96.126738,
+      32.284817
+    ],
+    "detroit-usa": [
+      -83.045754,
+      42.331427
+    ],
+    "doha-qatar": [
+      51.530437,
+      25.29161
+    ],
+    "dubai-united_arab_emirates": [
+      55.270783,
+      25.204849
+    ],
+    "dublin-ireland": [
+      -6.26031,
+      53.349805
+    ],
+    "dunedin-new_zealand": [
+      170.502798,
+      -45.87876
+    ],
+    "dusseldorf-germany": [
+      6.773456,
+      51.227741
+    ],
+    "eindhoven-netherlands": [
+      6.773456,
+      51.227741
+    ],
+    "florence-italy": [
+      11.255814,
+      43.76956
+    ],
+    "florida-usa": [
+      -81.515754,
+      27.664827
+    ],
+    "frankfurt-germany": [
+      8.682127,
+      50.110922
+    ],
+    "frauenfeld-switzerland": [
+      8.898754,
+      47.5536
+    ],
+    "freyming_merlebach-france": [
+      6.811347,
+      49.146198
+    ],
+    "gdynia-poland": [
+      18.530541,
+      54.51889
+    ],
+    "georgia-usa": [
+      -82.900075,
+      32.165622
+    ],
+    "glasgow-australia": [
+      143.7479,
+      -37.2036
+    ],
+    "glasgow-uk": [
+      -4.251806,
+      55.864237
+    ],
+    "gothenburg-sweden": [
+      11.97456,
+      57.70887
+    ],
+    "grand_rapids-usa": [
+      -85.668086,
+      42.96336
+    ],
+    "groningen-netherlands": [
+      6.566502,
+      53.219383
+    ],
+    "hamburg-germany": [
+      9.993682,
+      53.551085
+    ],
+    "hershey-usa": [
+      -76.650247,
+      40.285924
+    ],
+    "hong_kong-china": [
+      114.109497,
+      22.396428
+    ],
+    "houston-usa": [
+      -95.369803,
+      29.760427
+    ],
+    "huizhou-china": [
+      114.416196,
+      23.111847
+    ],
+    "illinois-usa": [
+      -89.398528,
+      40.633125
+    ],
+    "imola-italy": [
+      11.712429,
+      44.36
+    ],
+    "indianapolis-usa": [
+      -86.158068,
+      39.768403
+    ],
+    "inglewood-usa": [
+      -118.353131,
+      33.96168
+    ],
+    "jakarta-indonesia": [
+      106.845599,
+      -6.208763
+    ],
+    "kansas_city-usa": [
+      -94.578567,
+      39.099727
+    ],
+    "klagenfurt-austria": [
+      14.312225,
+      46.63646
+    ],
+    "krakow-poland": [
+      19.94498,
+      50.06465
+    ],
+    "la_plata-argentina": [
+      -57.954333,
+      -34.92125
+    ],
+    "landgraaf-netherlands": [
+      6.022409,
+      50.892765
+    ],
+    "las_vegas-usa": [
+      -115.13983,
+      36.169941
+    ],
+    "lausanne-switzerland": [
+      6.632273,
+      46.519653
+    ],
+    "leipzig-germany": [
+      12.373075,
+      51.339695
+    ],
+    "lima-peru": [
+      -77.042793,
+      -12.046374
+    ],
+    "lisbon-portugal": [
+      -9.139337,
+      38.722252
+    ],
+    "london-uk": [
+      -0.127758,
+      51.507351
+    ],
+    "los_angeles-usa": [
+      -118.243685,
+      34.052234
+    ],
+    "lyon-france": [
+      4.835659,
+      45.764043
+    ],
+    "madison-usa": [
+      -89.40123,
+      43.073052
+    ],
+    "madrid-spain": [
+      -3.70379,
+      40.416775
+    ],
+    "maine-usa": [
+      -69.445469,
+      45.253783
+    ],
+    "manchester-uk": [
+      -2.242631,
+      53.480759
+    ],
+    "manila-philippine": [
+      120.984219,
+      14.599512
+    ],
+    "manila-philippines": [
+      120.984219,
+      14.599512
+    ],
+    "mannheim-germany": [
+      8.46604,
+      49.487459
+    ],
+    "massachusetts-usa": [
+      -71.382437,
+      42.407211
+    ],
+    "melbourne-australia": [
+      -80.608109,
+      28.083627
+    ],
+    "merkers-germany": [
+      50.8167,
+      10.1175
+    ],
+    "mexico_city-mexico": [
+      -99.133208,
+      19.432608
+    ],
+    "michigan-usa": [
+      -85.602364,
+      44.314844
+    ],
+    "milan-italy": [
+      9.185924,
+      45.465422
+    ],
+    "minneapolis-usa": [
+      -93.265011,
+      44.977753
+    ],
+    "minnesota-usa": [
+      -94.6859,
+      46.729553
+    ],
+    "minsk-belarus": [
+      27.561524,
+      53.90454
+    ],
+    "missouri-usa": [
+      -91.831833,
+      37.964253
+    ],
+    "monchengladbach-germany": [
+      6.442804,
+      51.180457
+    ],
+    "monterrey-mexico": [
+      -100.316113,
+      25.686614
+    ],
+    "montreal-canada": [
+      -73.567256,
+      45.501689
+    ],
+    "montreal-usa": [
+      43.2,
+      2.15
+    ],
+    "mumbai-india": [
+      72.877656,
+      19.075984
+    ],
+    "munich-germany": [
+      11.581981,
+      48.135125
+    ],
+    "nagoya-japan": [
+      136.906398,
+      35.181446
+    ],
+    "napoca-romania": [
+      23.623635,
+      46.77121
+    ],
+    "nevada-usa": [
+      -116.419389,
+      38.80261
+    ],
+    "new_hampshire-usa": [
+      -71.572395,
+      43.193852
+    ],
+    "new_orleans-usa": [
+      -90.071532,
+      29.951066
+    ],
+    "new_south_wales-australia": [
+      151.205287,
+      -33.864174
+    ],
+    "new_york-us": [
+      -74.005941,
+      40.712784
+    ],
+    "new_york-usa": [
+      -74.005941,
+      40.712784
+    ],
+    "newark-usa": [
+      -74.172367,
+      40.735657
+    ],
+    "nickelsdorf-austria": [
+      17.070758,
+      47.941594
+    ],
+    "nimes-france": [
+      4.360054,
+      43.836699
+    ],
+    "north_carolina-usa": [
+      -79.0193,
+      35.759573
+    ],
+    "noumea-new_caledonia": [
+      166.458,
+      -22.2758
+    ],
+    "oakland-usa": [
+      -122.271114,
+      37.804364
+    ],
+    "oklahoma-usa": [
+      -97.504761,
+      35.473868
+    ],
+    "omaha-usa": [
+      -95.997988,
+      41.252363
+    ],
+    "oregon-usa": [
+      -120.554201,
+      43.804133
+    ],
+    "osaka-japan": [
+      135.502165,
+      34.693738
+    ],
+    "oslo-norway": [
+      10.752245,
+      59.913869
+    ],
+    "ostrava-czech_republic": [
+      18.262524,
+      49.820923
+    ],
+    "oulu-finland": [
+      25.471453,
+      65.012615
+    ],
+    "pagney_derriere_barine-france": [
+      5.704205,
+      47.250214
+    ],
+    "papeete-french_polynesia": [
+      -149.5696,
+      -17.535
+    ],
+    "paris-france": [
+      2.352222,
+      48.856614
+    ],
+    "pennsylvania-usa": [
+      -77.194525,
+      41.203322
+    ],
+    "penrose-new_zealand": [
+      174.811945,
+      -36.907417
+    ],
+    "philadelphia-usa": [
+      -75.165222,
+      39.952584
+    ],
+    "pico_rivera-usa": [
+      -118.096735,
+      33.983069
+    ],
+    "pittsburgh-usa": [
+      -79.995886,
+      40.440625
+    ],
+    "playa_del_carmen-mexico": [
+      -87.073885,
+      20.629559
+    ],
+    "porto_alegre-brazil": [
+      -51.217658,
+      -30.034647
+    ],
+    "prague-czech_republic": [
+      14.4378,
+      50.075538
+    ],
+    "quebec-canada": [
+      -71.207981,
+      46.813878
+    ],
+    "queensland-australia": [
+      142.702796,
+      -20.917574
+    ],
+    "recife-brazil": [
+      -34.882897,
+      -8.057838
+    ],
+    "rio_de_janeiro-brazil": [
+      -43.172897,
+      -22.906847
+    ],
+    "riyadh-saudi_arabia": [
+      46.675296,
+      24.713552
+    ],
+    "rosemont-usa": [
+      -87.87216,
+      41.986751
+    ],
+    "rotselaar-belgium": [
+      4.718379,
+      50.953671
+    ],
+    "saitama-japan": [
+      139.645482,
+      35.861729
+    ],
+    "salem-germany": [
+      -70.896715,
+      42.51954
+    ],
+    "san_francisco-usa": [
+      -122.419416,
+      37.774929
+    ],
+    "san_isidro-argentina": [
+      -77.032585,
+      -12.097183
+    ],
+    "san_jose-costa_rica": [
+      -121.886329,
+      37.338208
+    ],
+    "santiago-chile": [
+      -70.641997,
+      -33.46912
+    ],
+    "sanya-china": [
+      109.511909,
+      18.252847
+    ],
+    "sao_paulo-brasil": [
+      -46.6388,
+      -23.5489
+    ],
+    "sao_paulo-brazil": [
+      -46.6388,
+      -23.5489
+    ],
+    "scheessel-germany": [
+      9.4767,
+      53.1638
+    ],
+    "seattle-usa": [
+      -122.332071,
+      47.606209
+    ],
+    "seoul-korea": [
+      126.977969,
+      37.566535
+    ],
+    "seville-spain": [
+      -5.984459,
+      37.389092
+    ],
+    "sion-switzerland": [
+      7.362049,
+      46.229352
+    ],
+    "skanderborg-denmark": [
+      9.929799,
+      56.037247
+    ],
+    "sochaux-france": [
+      6.830703,
+      47.513075
+    ],
+    "south_carolina-usa": [
+      -81.163725,
+      33.836081
+    ],
+    "st_gallen-switzerland": [
+      9.3767173,
+      47.4244818
+    ],
+    "st_louis-usa": [
+      -90.4271,
+      38.6383
+    ],
+    "stockholm-sweden": [
+      18.071759,
+      59.32957
+    ],
+    "sydney-australia": [
+      18.071759,
+      59.32957
+    ],
+    "taipei-taiwan": [
+      121.565418,
+      25.032969
+    ],
+    "texas-usa": [
+      -99.901813,
+      31.968599
+    ],
+    "toronto-canada": [
+      -79.383184,
+      43.653226
+    ],
+    "toronto-usa": [
+      -79.383184,
+      43.653226
+    ],
+    "turku-finland": [
+      22.26663,
+      60.451813
+    ],
+    "uniondale-usa": [
+      -73.592906,
+      40.700379
+    ],
+    "utah-usa": [
+      -111.093731,
+      39.32098
+    ],
+    "vancouver-canada": [
+      -122.661486,
+      45.638728
+    ],
+    "victoria-australia": [
+      -123.365644,
+      48.428421
+    ],
+    "vienna-austria": [
+      16.373819,
+      48.208174
+    ],
+    "warsaw-poland": [
+      21.012229,
+      52.229676
+    ],
+    "washington-usa": [
+      -77.036871,
+      38.907192
+    ],
+    "wellington-new_zealand": [
+      174.776236,
+      -41.28646
+    ],
+    "werchter-belgium": [
+      4.70007,
+      50.97278
+    ],
+    "west_melbourne-australia": [
+      144.949272,
+      -37.809033
+    ],
+    "westcliff_on_sea-uk": [
+      0.696966,
+      51.535879
+    ],
+    "willemstad-netherlands_antilles": [
+      4.437907,
+      51.691947
+    ],
+    "windsor-canada": [
+      -83.036363,
+      42.314937
+    ],
+    "yogyakarta-indonesia": [
+      110.36949,
+      -7.79558
+    ],
+    "zaragoza-spain": [
+      -0.889085,
+      41.648823
+    ],
+    "zurich-switzerland": [
+      8.539183,
+      47.36865
+    ]
+  }

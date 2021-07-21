@@ -1,0 +1,51 @@
+{{template "layout" .}}
+{{define "head"}}
+<script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+</script>
+<link rel="stylesheet" href="static/css/creat_post.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+<script src="static/js/createPost.js" defer></script>
+{{end}}
+{{define "main"}}
+<main>
+    <div id="main1">
+        <h1>Creation Post</h1>
+        <form onsubmit="recupPost(event)" class="box1" action="" method="GET">
+            <!-- <div id="D&D">
+                <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)"><p>Déposer votre Image ici</p></div>
+                <button id="" type="button">Ajouter une Image</button>
+                
+            </div> -->
+            <p id="inputPost" rows=6 cols=40 contenteditable="true">Entrez votre texte ici !</p>
+            <!-- <TEXTAREA name="content" rows=6 cols=40 placeholder="Ecrivez ici..."></TEXTAREA> -->
+            <input id="content" type="hidden"  name="content" value="">
+            <input id="categorie" type="hidden"  name="categorie" value="">
+            <select onchange="recupContent(event)">
+                {{range .Categories}}
+                    <option type="radio" id="Categorie{{.Id}}"  value="{{.Name}}">{{.Name}}</option>
+                {{end}}
+            </select>
+            <input type="hidden" name="userId" value="{{.User.Id}}">
+            <input class="sub" type="submit" value="Envoyer"> 
+            <div>
+            <i class="fas fa-dharmachakra"></i>
+            </div>
+        </form>
+
+    </div>
+</main>
+
+{{end}}

@@ -1,0 +1,71 @@
+{{template "layout" .}}
+{{define "head"}}
+<link rel="stylesheet" href="./static/css/login.css">
+<script src="static/js/afficher.js" defer></script>
+<script src="static/js/signup.js" defer></script>
+{{end}}
+{{define "main"}}
+<div id="popup">
+    <main role="main">
+        <div id="content1">
+            <div class="box">
+                <div class="sidebar">
+                    <div class="sidebar-content">
+                        <p class="logo_container">
+                            <img class="logo" src="./static/img/logo.png"></p>
+                        <h3 class="desktop-only">Bienvenue sur la plateforme MLC</h3>
+                        <p class="desktop-only">
+                        L'équipe du MLC vous invite à créer un compte sur notre forum pour interagir avec d'autres utilisateurs !
+                        </p>
+                    </div>
+                    <div class="sidebar-footer">
+                        <p class="desktop-only">
+                            <a class="button" href="index">Accueil</a>
+                        </p>
+                    </div>
+                </div>
+                <div class="main">
+                    <div class="main-title">
+                        <a id="btnClose" href="index">&times;</a>
+                        <h1>Inscription MLC</h1>
+                    </div>
+                    <form id="login" method="get" action="/signup">
+                        <div class="field">
+                            <label for="Pseudo">Pseudo : </label>
+                            <input id="Pseudo" type="Pseudo" tabindex="1" accesskey="i" autocomplete="off" name="username" value="" required>
+                        </div>
+                        <div class="field">
+                            <label for="email">E-mail : </label>
+                            <input id="email" type="email" tabindex="1" accesskey="i" autocomplete="off" name="email" value="" required>
+                        </div>
+
+                        <div class="field">
+                            <label for="password">Mot de passe : </label>
+                            <input onkeyup="specs(event)" onfocus="toggle('verifs')" onblur="toggle('verifs')" id="password" type="password" tabindex="2" accesskey="m" autocomplete="off" name="password" value="" required>
+                            <img onclick="Afficher(event,'password')" class="Vue" src="./static/img/oeil barre.png">
+                            <div id="verifs">
+                                <label for="password">
+                                    Le mot de passe doit contenir : <br>
+                                    <span>8 Caractères minimum</span><br>
+                                    <span>Au moins 1 MAJUSCULE</span><br>
+                                    <span>Au moins 1 minuscule</span><br>
+                                    <span>Au moins 1 chiffre</span><br>
+                                    <span>Au moins 1 caractère spécial</span>
+                                </label>
+                            </div>
+                        </div>
+
+                        <div class="field">
+                            <label for="conf_password">Confirmation du mot de passe : </label>
+                            <input id="conf_password" type="password" tabindex="2" accesskey="m" autocomplete="off" name="conf_password" value="" required>
+                            <img onclick="Afficher(event,'conf_password')" class="Vue" src="./static/img/oeil barre.png">
+                        </div>
+
+                        <input name="submit" type="submit" class="button" tabindex="6" accesskey="l" value="S'inscrire">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+</div>
+{{end}}

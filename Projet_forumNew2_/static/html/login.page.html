@@ -1,0 +1,72 @@
+{{template "layout" .}}
+{{define "head"}}
+    <link rel="stylesheet" href="./static/css/login.css">
+    <script src="static/js/afficher.js" defer></script>
+{{end}}
+{{define "main"}}
+<div id="popup">
+    <div id="content1">
+        <div class="box">
+            <div class="sidebar">
+                <div class="sidebar-content">
+                    <p class="logo_container">
+                        <img class="logo" src="/static/img/logo.png"></p>
+                    <h3 class="desktop-only">Bienvenue sur la plateforme MLC</h3>
+                    <p class="desktop-only">
+                        L'équipe du MLC vous invite à vous enregirstrer sur notre forum pour interagir avec d'autres utilisateurs !
+                    </p>
+                </div>
+                <div class="sidebar-footer">
+                    <p class="desktop-only">
+                        <a class="button" href="signup">Créer un compte</a>
+                    </p>
+                </div>²
+            </div>
+            <div class="main">
+                <!--<%
+                if (typeof error == 'string') {
+                %>
+                <div class="main-error">
+                    <p class="error">
+                        <strong><%= error %></strong>
+                    </p>
+                </div>
+                <%
+                }
+                if (typeof success == 'string') {
+                %>
+                <div class="main-error">
+                    <p class="success">
+                        <strong><%= success %></strong>
+                    </p>
+                </div>
+                <%
+                }
+                %>-->
+                <div class="main-title">
+                    <a id="btnClose" href="index">&times;</a>
+                    <h1>Connexion au Forum MLC</h1>
+                </div>
+                <form id="login" method="post" action="/login">
+                    <div class="field">
+                        <label for="email">E-mail : </label>
+                        <input id="email" type="email" tabindex="1" accesskey="i" autocomplete="off" name="mail" value="" required>
+                    </div>
+
+                    <div class="field">
+                        <label for="password">Mot de passe : </label>
+                        <input id="password" type="password" tabindex="2" accesskey="m" autocomplete="off" name="password" value="" required>
+                        <img onclick="Afficher(event,'password')" class="Vue" src="./static/img/oeil barre.png">
+                    </div>
+                    <!--<%
+                    if (typeof service == 'undefined') {
+                    %>-->
+                    <input name="submit" type="submit" class="button" tabindex="6" accesskey="l" value="Se connecter">
+                    <a href="recupmdp">Mot de passe oublié</a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{end}}

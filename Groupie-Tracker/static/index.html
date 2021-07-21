@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <title>Groupie Tracker</title>
+    <link rel="stylesheet" href="static/style.css">
+    <script src="static/script.js" defer></script>
+    <script src="static/slider.js" defer></script>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&family=Merienda&family=Prompt:wght@500&display=swap" rel="stylesheet">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css' rel='stylesheet' />
+</headn>
+<body>
+    <a href="#" id="toTop">
+        <img src="static/fleche.png" alt="">
+    </a>
+    <div id="return"></div>
+    <div id="ref"></div>
+    <header>
+        <div class="title">
+            <h1>Groupie Traker</h1>
+        </div>
+        <div id="btnSearch" data-mode="l">
+            <img id="loupe" src="/static/loupe.png">
+            <img id="croix" src="/static/croix.png">
+        </div>
+        <div id="search">
+            <span id="globdata" style="display:none;">{{.Groupes}}</span>
+            <input type="text" list="search-list" id="research" onkeyup="search()" placeholder="Saisissez un élément à rechercher...">
+            <datalist id="search-list"></datalist>
+            <div id="checks">
+                <div class="container">
+                    <ul class="ks-cboxtags">
+                        <span class="right" id="top">
+                            <li><input type="checkbox" id="checkboxOne" value="fuzzy"><label for="checkboxOne">Fuzzy search</label></li>
+                            <li><input onchange="toggleActive('sliderFa','checkbox12');search()" type="checkbox" id="checkbox12" value="firstAlbum"><label for="checkbox12">Date du premier album</label></li>
+                            <li><input onchange="toggleActive('sliderNbm','checkbox13');search()" type="checkbox" id="checkbox13" value="NbMembers"><label for="checkbox13">Nombre de Membres</label></li>
+                            <li><input onchange="toggleActive('slider','checkboxFive');search()" type="checkbox" id="checkboxFive" value="creationDate"><label for="checkboxFive">Année de création</label></li>
+                            <li id="slider" onchange="search()">
+                                <div class="middle">
+                                    <div class="multi-range-slider">
+                                        <p id="min" class="vals">1991</p>
+                                        <input type="range" id="input-left" min="1958" max="2015" value="1958">
+                                        <input type="range" id="input-right" min="1958" max="2015" value="2015">
+                                        <p id="max" class="vals">2020</p>
+                                
+                                        <div class="slider">
+                                            <div class="track"></div>
+                                            <div class="range"></div>
+                                            <div class="thumb left"></div>
+                                            <div class="thumb right"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="sliderNbm" onchange="search()">
+                                <div class="middle">
+                                    <div class="multi-range-slider">
+                                        <p id="minNbm" class="vals">1</p>
+                                        <input type="range" id="input-leftNbm" min="1" max="8" value="1">
+                                        <input type="range" id="input-rightNbm" min="1" max="8" value="8">
+                                        <p id="maxNbm" class="vals">8</p>
+                                
+                                        <div class="slider">
+                                            <div class="track"></div>
+                                            <div class="range"></div>
+                                            <div class="thumb left"></div>
+                                            <div class="thumb right"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li id="sliderFa" onchange="search()">
+                                <div class="middle">
+                                    <div class="multi-range-slider">
+                                        <p id="minFa" class="vals">1963</p>
+                                        <input type="range" id="input-leftFa" min="1963" max="2018" value="1963">
+                                        <input type="range" id="input-rightFa" min="1963" max="2018" value="2018">
+                                        <p id="maxFa" class="vals">2018</p>
+                                
+                                        <div class="slider">
+                                            <div class="track"></div>
+                                            <div class="range"></div>
+                                            <div class="thumb left"></div>
+                                            <div class="thumb right"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </span>
+                        <span id="params" class="right" onchange="search()">
+                            <h2 class="noBottom noTop">Rechercher dans :</h2>
+                            <li><input type="radio" name="choix" id="checkboxTwo" value="2" checked><label for="checkboxTwo">Nom de Groupe / Membres</label></li>
+                            <li><input type="radio" name="choix" id="checkboxThree" value="71"><label for="checkboxThree">Localisation</label></li>
+                            <li><input type="radio" name="choix" id="checkboxFour" value="6"><label for="checkboxFour">Date du premier Album</label></li>
+                            <li><input type="radio" name="choix" id="checkboxSix" value="72"><label for="checkboxSix">Dates de concert</label></li>
+                        </span>
+                    </ul>
+                </div>
+            </div>
+            <div id="filters">
+                <div class="container">
+                    <ul class="ks-cboxtags">
+                        <h2 class="noTop noBottom" >Trier par ordre :</h2>
+                        <span onchange="document.getElementById('tri').classList.add('active')" id="ordre" class="left">
+                            <li><input type="radio" name="ordre" id="checkboxSeven" value="asc"><label for="checkboxSeven">Croissant</label></li>
+                            <li><input type="radio" name="ordre" id="checkboxHeight" value="desc"><label for="checkboxHeight">Décroissant</label></li>
+                        </span>
+                        <span onchange="document.getElementById('buttons').classList.add('active')" id="tri" class="left">
+                            <h2 class="noBottom">Sur le critère :</h2>
+                            <li><input type="radio" name="tri" id="checkboxNine" value="3" ><label for="checkboxNine">Nombre de Membres</label></li>
+                            <li><input type="radio" name="tri" id="checkboxTen" value="5"><label for="checkboxTen">Date de création</label></li>
+                            <li><input type="radio" name="tri" id="checkboxEleven" value="6"><label for="checkboxEleven">Date du premier Album</label></li>
+                        </span>
+                        <span id="buttons">
+                            <button id="validF" onclick="validateFilters()">Appliquer les filtres</button>
+                            <button id="emptyF" onclick="emptyFilters()">Supprimer les filtres</button>
+                        </span>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div id="pops">
+        {{range $key, $value := .Groupes}}
+        <div id="popup{{.Id}}">
+            <a class="close" id="{{.Id}}">❌</a>
+            <div class="contenu">
+                <div class="description">
+                    <h1>{{.Name}}</h1>
+                    <div class="txt">
+                        <img src="{{.Image}}"> 
+                        {{$len := len .Members}}
+                        {{$sep := " le groupe"}}
+                        {{if eq $len 1}}
+                            {{$sep = ","}}
+                        {{end}}
+                        
+                        <p>
+                            {{if eq $len 1}}
+                                Artiste depuis 
+                            {{else}}
+                                Fondé en 
+                            {{end}}
+
+                            {{.CreationDate}}{{$sep}} {{.Name}} a sorti son premier album le {{.FirstAlbum}}.
+                            
+                            {{if gt $len 1}}
+                            <br><br>Le groupe est composé de :
+                                {{range $key2, $value2 := .Members}}
+                                    {{- if gt $key2 0}} | {{end}}{{$value2}}
+                                {{- end}}
+                            {{end}}
+                        </p>
+                    </div>
+                </div>
+                <div class="dateLocation" data-txt="{{.DatesLoc}}">
+                    <h2>Dates et lieux de Concerts :</h2>
+                </div>
+            </div>
+        </div>
+        {{end}}
+    </div>
+    <section id="cards">
+        {{range $key, $value := .Groupes}}
+        <div class="card" data-id={{.Id}} data-date={{.CreationDate}} id="card{{.Id}}">
+            <div class="logo" style="background-image: url('{{.Image}}');"></div>
+            <span>
+                <h2>{{.Name}}</h2>
+                <hr>
+                <h3>Membre.s :</h3>
+                <p>
+                    {{range $key2, $value2 := .Members}}
+                        {{- if gt $key2 0}} | {{end}}{{$value2}}
+                    {{- end}}
+                </p>
+            </span>
+        </div>
+        {{end}}
+
+        <div id="noResultDiv">
+            <h3>Aucun résultat correspondant</h3>
+            <img src="static/noResult.png" alt="noResult" id="noResult">
+        </div>
+    </section>
+    <footer>
+        <p>Nombre de groupes : 52</p>
+        <p>Créé par : ALEM Lina | SARTORI BOUTY Marie-Laure | SIAUD Cyprien</p>
+    </footer>
+    <span id="globdata" style="display:none;">{{.Groupes}}</span>
+    <label for="coucou"></label>
+</body>
+</html>

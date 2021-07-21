@@ -1,0 +1,70 @@
+{{template "layout" .}}
+{{define "head"}}
+<link rel="stylesheet" href="static/css/login.css">       
+<script src="static/js/afficher.js" defer></script>
+<script src="static/js/signup.js" defer></script>
+{{end}}
+{{define "main"}}
+<div id="content1">
+    <div class="box">
+        <div class="sidebar">
+            <div class="sidebar-content">
+                <p class="logo_container">
+                    <img class="logo" src="static/img/logo.png"></p>
+                <h3 class="desktop-only">Bienvenue sur l'onglet de récupération de votre mot de passe</h3>
+                <p class="desktop-only">
+                    Nous vous conseillons de ne pas partager votre mot de passe avec d'autre utilisateurs !
+                </p>
+                <a class="button" href="index">Accueil</a>
+            </div>
+        </div>
+        <div class="main">
+            <a id="btnClose" href="index">&times;</a>
+            <form id="login" method="post" action="">
+                <div class="main-title">
+                    <h1>Récupération du mot de passe</h1>
+                </div>
+                <!--<%
+                if (typeof error == 'string') {
+                %>
+                <div class="main-error">
+                    <p class="error">
+                        <strong><%= error %></strong>
+                    </p>
+                </div>
+                <%
+                }
+                if (typeof success == 'string') {
+                %>
+                <div class="main-error">
+                    <p class="success">
+                        <strong><%= success %></strong>
+                    </p>
+                </div>
+                <%
+                }
+                %>-->
+                <div class="main-content">
+                    <div class="form">    
+                        <div class="field">
+                            <label for="password">Nouveau mot de passe </label>
+                            <input id="password" type="password" tabindex="2" accesskey="m" autocomplete="off" name="password" value="" required>
+                            <img onclick="Afficher(event,'password')" class="Vue" src="./static/img/oeil barre.png">
+                        </div>
+                        <!--<%
+                        if (typeof service == 'undefined') {
+                        %>-->
+                        <div class="field">
+                            <label for="passwordConfirm">Confirmation du nouveau mot de passe </label>
+                            <input id="passwordConfirm" type="password" tabindex="2" accesskey="m" autocomplete="off" name="conf_password" value="" requierd>
+                            <img onclick="Afficher(event,'passwordConfirm')" class="Vue" src="./static/img/oeil barre.png">
+                        </div>
+                        <input name="submit" type="submit" class="button" tabindex="6" accesskey="l" value="Enregistrer">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+{{end}}

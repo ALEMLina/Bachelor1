@@ -1,0 +1,57 @@
+{{template "layout" .}}
+{{define "head"}}
+    <link rel="stylesheet" href="static/css/tickets.css">
+    <script src="static/js/tickets.js" defer></script>
+{{end}}
+{{define "main"}}
+<main id="main">
+    <div id="menu">
+        <a href="dashBoard">Statistiques</a>
+        <a href="banList">BanList</a>
+        <a href="tickets" class="active">Tickets</a>
+        {{if eq .User.Role 1}}
+        <a href="role">Rôles</a>
+        <a href="catModo" >Modérateurs</a>
+        <a href="categories">Catégories</a>
+        {{end}}
+    </div>
+    <div id="container" class="visible">
+        <h2>Tickets</h2>
+        <div id="sub-container">
+            <div>
+
+                <h3>En attente</h3>
+
+                {{range .Wait}}
+                
+                <ul class="list">
+                    <li class="list-elem"> Catégorie : {{.Categorie}}<span>{{.Content}}</span><br><span>Par {{.User.Username}}</span><br><span>Le {{.Date}}</span></li>
+                 
+                </ul>
+                {{end}}
+            </div>
+            <div>
+                <h3>Ouverts</h3>
+
+                {{range .Open}} 
+                
+                <ul class="list">
+                    <li class="list-elem">Ouvert par {{.OpenBy.Username}}<span>Catégorie : {{.Categorie}}</span><span>{{.Content}}</span><br><span>Par {{.User.Username}}</span><br><span>Le {{.Date}}</span></li>
+                </ul>
+                {{end}}
+            </div>
+            <div>
+                <h3>Fermés</h3>
+                
+                {{range .Close}}
+                
+                <ul class="list">
+                    <li class="list-elem">Fermé par {{.OpenBy.Username}}<span>Catégorie : {{.Categorie}}</span><span>{{.Content}}</span><br><span>Par {{.User.Username}}</span><br><span>Le {{.Date}}</span></li>
+                </ul>
+                {{end}}
+            </div>
+        </div>
+    </div>
+</main>
+
+{{end}}
